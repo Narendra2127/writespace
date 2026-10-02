@@ -6,7 +6,7 @@ function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/articles")
+    fetch("https://writespace-tj2n.onrender.com/api/articles")
       .then((response) => response.json())
       .then((data) => {
         setArticles(data.reverse());

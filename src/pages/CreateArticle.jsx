@@ -11,7 +11,7 @@ function CreateArticle() {
     setMessage("Publishing...");
 
     try {
-      const response = await fetch("http://localhost:5000/api/articles", {
+      const response = await fetch("https://writespace-tj2n.onrender.com/api/articles", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
